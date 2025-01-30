@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID Card Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>ID Card Generator</h2>
+        <form id="idCardForm">
+            <input type="text" id="name" placeholder="Enter Name" required>
+            <input type="text" id="designation" placeholder="Enter Designation" required>
+            <input type="file" id="photo" accept="image/*" required>
+            <button type="button" onclick="generateIdCard()">Generate ID Card</button>
+        </form>
+
+        <div id="idCardContainer">
+            <canvas id="idCardCanvas"></canvas>
+            <button id="downloadBtn" style="display:none;" onclick="downloadIdCard()">Download ID Card</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
